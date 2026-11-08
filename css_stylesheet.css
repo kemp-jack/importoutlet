@@ -1,0 +1,412 @@
+
+/* General page styling */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #cfcfcf;
+    color: #333;
+    font-family: Verdana, sans-serif;
+}
+
+
+/* Main website heading */
+
+.heading {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(to bottom, #eeeeee, #cccccc);
+    color: #5e007d;
+    border-bottom: 3px solid #5e007d;
+}
+
+.heading h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 3rem;
+    font-style: italic;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #999;
+}
+
+.heading h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 8px;
+}
+
+
+/* Navigation bar */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 12px;
+    background: linear-gradient(to bottom, #7900a3, #42005c);
+    border-bottom: 3px solid #300044;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    border: 1px solid #a45cba;
+    background-color: #650087;
+}
+
+.navbar a:hover {
+    background-color: #a34bc2;
+    color: white;
+}
+
+
+/* Introduction section */
+
+.subheading {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 2px solid #5e007d;
+    text-align: center;
+}
+
+.subheading h2 {
+    color: #5e007d;
+    font-size: 1.4rem;
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 15px;
+}
+
+.subheading p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+
+/* Vehicle sections */
+
+.vehicle-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.section-title {
+    color: #5e007d;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #5e007d;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.section-description {
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+}
+
+
+/* Vehicle grid */
+
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* Individual vehicle cards */
+
+.vehicle-card {
+    background-color: #f9f9f9;
+    border: 2px solid #5e007d;
+    padding: 10px;
+}
+
+.vehicle-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border: 1px solid #999;
+}
+
+.vehicle-info {
+    padding: 10px;
+}
+
+.vehicle-info h3 {
+    color: #5e007d;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.15rem;
+}
+
+.vehicle-info p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+.vehicle-info h4 {
+    font-size: 1.3rem;
+    color: #5e007d;
+}
+
+
+/* Vehicle enquiry buttons */
+
+.vehicle-button {
+    display: inline-block;
+    padding: 9px 15px;
+    background: linear-gradient(to bottom, #7900a3, #42005c);
+    border: 1px solid #300044;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.vehicle-button:hover {
+    background: #a34bc2;
+}
+
+
+/* Contact section */
+
+.contact-section {
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 30px;
+    background-color: #e5e5e5;
+    border: 2px solid #5e007d;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #5e007d;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+    font-family: 'Times New Roman', serif;
+    line-height: 1.5;
+}
+
+
+/* Responsive layout */
+
+@media (max-width: 800px) {
+
+    .vehicle-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .heading h1 {
+        font-size: 2rem;
+    }
+
+    .subheading {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .vehicle-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle-section {
+        margin: 20px auto;
+    }
+
+}
+
+/* Ridiculously tacky announcement banner */
+.announcement-banner {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(
+        to bottom,
+        #ffff00,
+        #ff9900,
+        #ffcc00
+    );
+    border-top: 3px ridge white;
+    border-bottom: 4px ridge #5e007d;
+    padding: 12px 0;
+    white-space: nowrap;
+}
+
+.announcement-scroll {
+    display: inline-block;
+    color: #990000;
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px white, 2px 2px #ff6666;
+    animation: marquee-scroll 22s linear infinite;
+}
+
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Flashing decorative text */
+@keyframes tacky-flash {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+}
+
+.announcement-banner:hover .announcement-scroll {
+    animation-play-state: paused;
+}
+
+
+/* About Us Page */
+
+.about-intro {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 2px solid #5e007d;
+    text-align: center;
+}
+
+.about-intro h2 {
+    color: #5e007d;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px #ccc;
+}
+
+.about-intro p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.about-section {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 25px;
+    background-color: #e5e5e5;
+    border: 2px solid #5e007d;
+}
+
+.about-section h2 {
+    color: #5e007d;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #5e007d;
+    padding-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.about-card {
+    background-color: #f9f9f9;
+    border: 2px ridge #5e007d;
+    padding: 18px;
+}
+
+.about-card h3 {
+    color: #5e007d;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.15rem;
+}
+
+.about-card p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+.about-contact {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 30px;
+    background: linear-gradient(to bottom, #eeeeee, #cccccc);
+    border: 3px ridge #5e007d;
+    text-align: center;
+}
+
+.about-contact h2 {
+    color: #5e007d;
+    font-family: Georgia, 'Times New Roman', serif;
+    text-shadow: 1px 1px white;
+}
+
+.about-contact p {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+/* About page responsive layout */
+
+@media (max-width: 800px) {
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-section,
+    .about-intro,
+    .about-contact {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
